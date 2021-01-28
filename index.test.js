@@ -1,16 +1,16 @@
 // 2. importeren
-const add = require("./index").add;
+const getVolume = require("./index").getVolume;
 
-test("add() function should return the sum of 2 numbers", (
 
-) => {
-    // ARRANGE
-    const number1 = 12;
-    const number2 = 13;
+test('getVolume() function multiplication of width, length and height',() =>{
 
-    // ACT
-    const sum = add(number1, number2);
-
-    // ASSERT
-    expect(sum).toBe(25); // expect en toBe komen uit jest!
+// arrange
+    const width = 4;
+    const length = 5;
+    const height = 7;
+// act
+    const volume = getVolume(width, length, height);
+// assert
+    expect(volume).toBe(140);
 });
+

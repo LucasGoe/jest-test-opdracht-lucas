@@ -1,13 +1,17 @@
-function add(num1, num2) {
-    //   console.log("INPUT", num1, num2);
-    const sum = num1 + num2;
-    //   console.log("SUM", sum);
-    return sum;
+function getVolume(width, length, height) {
+    console.log("INPUT :", width, length, height);
+    return width * length * height;
 }
+const volume = getVolume(4, 5, 7);
+    console.log(volume);
 
 
 // 1. exporteren
 
 module.exports = {
-    add: add,
+    getVolume: getVolume,
 };
+
+
+
+
